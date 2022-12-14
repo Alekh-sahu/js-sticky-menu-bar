@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sticky menu bar</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #header {
+      text-align: center;
+    }
+
+    #logo {
+      width: 250px;
+      height: auto;
+    }
+
+    #menu-bar {
+      text-align: center;
+      background-color: #7F669D;
+    }
+
+    #menu-bar li {
+      display: inline-block;
+      padding: 15px 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #container {
+      text-align: center;
+      paddding: 50px 100px
+    }
+
+    #about-img {
+      width: 100%;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <img src="https://images.news18.com/ibnlive/uploads/2021/06/1623121828_shutterstock_444053515.jpg?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal" id="logo" alt="">
+  </div>
+  <nav id="menu-bar">
+    <li>Home</li>
+    <li>About us</li>
+    <li>Our team</li>
+    <li>Client</li>
+    <li>Contact us</li>
+  </nav>
+  <div id="container">
+    <h1>Friendship</h1>
+    <img id="about-img" src="https://universitas21.com/sites/default/files/2018-04/shutterstock_427333528.jpg" alt="" />
+    <p>A false friend might push you to change for them. Fake friends might give you the feedback you want rather than
+      the words that will actually help
+      you. A true friend acknowledges your feelings but at the same time points you towards a happier, healthier life. A true friend is not complacent in
+      your personal growth; they don’t passively sit by and watch you make choices that are not good for you. Real friends listen to you when you talk
+      about your feelings, your ideas about the world, and what brings you joy. A friend is someone who gives you encouragement to make the choice that
+      will get you to want in life. Friends learn the art of being your biggest cheerleader while holding you accountable to your goals as well.
+      Spending time with a trustworthy friend makes you feel compelled to make the choices that feel right to you, speak your truth, and live to the
+      best of your ability. Laughing with a great friend can help you forget about your troubles, and you can listen to them talk about theirs.
+
+      True Friendship Doesn’t Abandon You
+
+      Fairweather friends are with you when you’re happy and successful. Then, in tough times, when things become challenging for you, these friends feel compelled
+      to move on to the next happy, successful person. A real friend, on the other hand, stays with you through traumas, disappointments, mental health crises,
+      and physical illnesses. They don’t abandon you just because it’s easier or more comfortable to avoid you. Because a true friend truly cares about you,
+      they actually want to be there for you during your difficult times. They care more about what you are going through more than they care about how fun
+      you are. A friend isn’t around simply for the things or good times you have in your life — they are around for you! Friends want to hear about your
+      relationships, school and work, ideas, and your family. So when your life gets more challenging and you find yourself feeling pretty down or
+      overwhelmed, you won’t have to go through these challenges alone with a true friend in your corner.
+      you might want to spend time with people who are different from you in ways that challenge you to grow as a person. If your current friends let you
+      down, redefining true friendship can open the door to a rich, rewarding relationship.
+
+      You might ask yourself questions about friendship, like, What are the signs of true friendship? What is a true best friend? What are the five qualities of
+      true friendship? What factors define true friendship? What is perfect friendship? How do you become a true friend? What's the difference
+      between a real friend and a true friend? What's the difference between a good friend and a true friend? What is a friendship symbol for best friend? What
+      does pure friendship mean?
+
+      Much like our personal styles, we all may have different needs and desires when coming to friendship. You may also come to recognize that some differences
+      are able to support you in some areas of life while you may have another friend that you rely on for support in another area of your life. Expanding the
+      friendships that make up your support system can help ensure that your needs are adequately being met. No friend is perfect, and no friend will be able to
+      be everything to you. Even true friends will sometimes disappoint us. What matters most is how they respond to your feelings and the patterns they establish
+      in their relationships. We all need the support of friends in our lives. Have the disappointments you are experiencing in your friendship become habits? A
+      true friend cares about you. They're able to have concern and respect for your thoughts and emotions even when they may not agree. If the disappointment
+      you are experiencing in a friendship has become consistent, it may be time to redefine your definition of a true friend.
+
+      Talking to a professional therapist can help you understand where you are going wrong as you choose your friends. The therapist can offer you a sound
+      psychological basis for recognizing and nurturing the friendships that will improve your life and bring you happiness and peace now and in the future.
+      It only takes a moment to reach out for help. When you do, you can start your journey towards satisfying friendships with real friends.
+    </p>
+  </div>
+  <script>
+    window.addEventListener("scroll", function() {
+      let navbar = document.getElementById("menu-bar");
+      if (window.pageYOffset >= 190) {
+        navbar.classList.add("sticky");
+      }else{
+        navbar.classList.remove("sticky");
+      }
+    });
+  </script>
+</body>
+
+</html>
